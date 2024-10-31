@@ -1,7 +1,11 @@
 Feature: Acceso rápido para el cuidador
 
-  Scenario: El cuidador necesita un apartado de acceso rápido
-    Given El cuidador está al pendiente del usuario
-    And Este presenta problemas en el uso de un aplicativo no muy fácil de explicar
-    When El cuidador ingresa a la plataforma
-    Then Se le brinda un acceso rápido para acceder a las diferentes herramientas
+  Scenario:  Acceso a soporte instantáneo
+    Given que el cuidador necesita guiar al usuario rápidamente.
+    When ingresa a la plataforma.
+    Then se le brinda un acceso rápido a herramientas esenciales.
+
+  Scenario: Acceso rápido para el cuidador
+    Given que el cuidador quiere evitar complicaciones.
+    When accede al modo de acceso rápido.
+    Then encuentra las herramientas necesarias sin navegar por menús
