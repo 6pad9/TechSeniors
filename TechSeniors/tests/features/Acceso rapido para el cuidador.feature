@@ -1,11 +1,11 @@
-Feature: Adulto mayor interactuando con la plataforma
+Feature: Acceso rápido para el cuidador
 
-      Scenario: Interacción simple con TechSeniors
-          Given el adulto entra a la plataforma TechSeniors.
-          When entra a la landing page de la plataforma.
-          Then se muestran indicaciones claras y sencillas de seguir.
-          
-          Scenario: Navegación intuitiva
-          Given el adulto mayor busca información específica.
-          When navega por las secciones de la plataforma.
-          Then encuentra la información deseada sin dificultad.
+      Scenario: Guía eficiente para el usuario
+            Given que el cuidador necesita guiar al usuario rápidamente.
+            When ingresa a la plataforma.
+            Then se le brinda un acceso rápido a herramientas esenciales.
+      
+      Scenario: Simplificación de navegación
+            Given que el cuidador quiere evitar complicaciones.
+            When accede al modo de acceso rápido.
+            Then encuentra las herramientas necesarias sin navegar por menús.
