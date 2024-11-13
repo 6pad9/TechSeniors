@@ -285,7 +285,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  bac
+  height: 100%;
 }
 
 .footer-links-column-title {
@@ -308,7 +308,7 @@ body {
 
 .footer-links-column a {
   font-size: 16px;
-  color: #C1937D; /*rgb(54, 255, 185)*/
+  color: #5C3E37; /*rgb(54, 255, 185)*/
   text-decoration: none;
 }
 
