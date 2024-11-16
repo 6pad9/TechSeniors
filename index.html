@@ -10,14 +10,20 @@
 <body>
   <header id="header">
     <nav class="navbar">
+        <button id="openMenu" class="menu-button open-menu" aria-label="abrir-menu">
+            <img src="imgs/menu-hamburguesa.png" alt="menu">
+        </button>
+        <button id="closeMenu" class="menu-button close-menu" aria-label="cerrar-menu" style="display: none;">
+            <img src="imgs/cancelar.png" alt="menu">
+        </button>      
         <div class="navbar__logo">
-            <img src="../imgs/logoOf.png" alt="Logo">
+            <img src="imgs/logoOf.png" alt="Logo">
         </div>
         <ul class="navbar__links">
             <li class="navbar__item">
                 <a href="#">About us</a>
                 <ul class="dropdown">
-                    <li><a href="#">Descripción de la Solución</a></li>
+                    <li><a href="#desc-1">Descripción de la Solución</a></li>
                     <li><a href="#">Eventos</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
@@ -25,10 +31,10 @@
             <li class="navbar__item">
                 <a href="#">Tutoriales</a>
                 <ul class="dropdown">
-                    <li><a href="#">Usando Smarthphone</a></li>
-                    <li><a href="#">Accdiendo a Internet</a></li>
-                    <li><a href="#">Comunicación</a></li>
-                    <li><a href="#">Redes Sociales</a></li>
+                    <li><a href="#tuto_1">Usando Smarthphone</a></li>
+                    <li><a href="#tuto_2">Accediendo a Internet</a></li>
+                    <li><a href="#tuto_3">Comunicación</a></li>
+                    <li><a href="#tuto_4">Redes Sociales</a></li>
                 </ul>
             </li>
             <li class="navbar__item">
@@ -58,8 +64,6 @@
                     <li><a href="#">Contraste</a></li>
                 </ul>
             </li>
-
-
         </ul>
 
         <div class="navbar__buttons">
@@ -79,7 +83,7 @@
         </div>
     </section>
 
-    <section class="about-us">
+    <section id="desc-1" class="about-us">
         <div class="about-us__image">
             <img src="imgs/about-us.webp" alt="About Us Image">
         </div>
@@ -93,16 +97,40 @@
         </div>
     </section>
 
-    <section class="footer">
-        
-    </section>
-    <script>
-        fetch('layout/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
-    </script>
+    <section class="tutoriales">
+        <h1 class="tutoriales__title">Tutoriales</h1>
+        <div class="tutoriales__grid">
+            <div id="tuto_1" class="tutoriales__item">
+                <img src="imgs/imagen1.png" alt="Usando Smarthphone" class="tutoriales__image">
+                <div class="tutoriales__text">
+                    <h2>Usando Smarthphone</h2>
+                    <p>Aprenda a utilizar tu smartphone con facilidad y aproveche todas sus funciones.</p>
+                </div>
+            </div>
+            <div id="tuto_2" class="tutoriales__item">
+                <img src="imgs/imagen2.png" alt="Accediendo a Internet" class="tutoriales__image">
+                <div class="tutoriales__text">
+                    <h2>Accediendo a Internet</h2>
+                    <p>Descubra cómo navegar en Internet de manera segura y efectiva.</p>
+                </div>
+            </div>
+            <div id="tuto_3" class="tutoriales__item">
+                <img src="imgs/imagen3.png" alt="Comunicación" class="tutoriales__image">
+                <div class="tutoriales__text">
+                    <h2>Comunicación</h2>
+                    <p>Explore diferentes herramientas para comunicarte con amigos y familiares.</p>
+                </div>
+            </div>
+            <div id="tuto_4" class="tutoriales__item">
+                <img src="imgs/imagen4.png" alt="Redes Sociales" class="tutoriales__image">
+                <div class="tutoriales__text">
+                    <h2>Redes Sociales</h2>
+                    <p>Aprenda a usar las redes sociales de forma facil.</p>
+                </div>
+            </div>
+        </div>
+    </section>       
+    
     <footer class="footer-container">
       <div class="footer-links">
         <div class="footer-links-column">
@@ -139,12 +167,12 @@
           <img class="img-c" src="imgs/logoOf.png" height="100" width="300" />
         </div>
       </div>
-      <div class="linea-container">
-        <div class="linea-container-s"></div>
-      </div>
+
       <div class="footer-derechos">
         <span>© 2024 TechSeniors. Todos los derechos reservados</span>
       </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
