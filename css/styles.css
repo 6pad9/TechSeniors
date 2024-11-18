@@ -339,7 +339,7 @@ body {
 }
 
 .footer-links-column a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
