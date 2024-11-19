@@ -423,10 +423,13 @@ body {
     cursor: pointer;
     font-size: 24px;
     border-radius: 20px;
-    margin: 0 5px; 
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
 }
 
-
+.carousel-button:hover {
+    background-color: #C1937D;
+}
 
 @media (max-width: 1200px) {
     .carousel-item {
@@ -453,6 +456,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.comunidad-text {
+    text-align: center;
+    font-size: 20px;
+    color: #efefef;
 }
 
 .container-carrousel {
@@ -491,6 +500,7 @@ body {
     display: flex;
     align-items: flex-start;
 }
+
 
 
 /* FOOTER CONTAINDER */
