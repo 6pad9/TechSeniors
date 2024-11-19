@@ -171,3 +171,17 @@ document.getElementById("redirectBtn").addEventListener("click", function() {
     window.location.href = "login.html";
 });
 
+function closeChat() {
+    // Selecciona los elementos por sus IDs
+    const chatBox = document.getElementById('chatBox');
+    const chatPopup = document.getElementById('chat');
+
+    // Oculta ambos elementos si existen
+    if (chatBox) {
+        chatBox.style.display = 'none';
+    }
+    if (chatPopup) {
+        chatPopup.style.display = 'none';
+    }
+}
+
