@@ -605,3 +605,9 @@ body {
         grid-column: span 1;
     }
 }
+
+@media (min-width: 840px) {
+    #openMenu, #closeMenu {
+        display: none !important;
+    }
+}
