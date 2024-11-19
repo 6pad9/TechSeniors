@@ -22,7 +22,9 @@
         </div>
         <ul class="navbar__links">
             <li class="navbar__item">
-                <a href="#">About us</a>
+                <div class="menu-ref">
+                    <a class="menu-ref" href="#">About us</a>
+                </div>
                 <ul class="dropdown">
                     <li><a href="#desc-1">Descripción de la Solución</a></li>
                     <li><a href="#">Eventos</a></li>
@@ -30,7 +32,9 @@
                 </ul>
             </li>
             <li class="navbar__item">
-                <a href="#">Tutoriales</a>
+                <div class="menu-ref">
+                    <a href="#">Tutoriales</a>
+                </div>
                 <ul class="dropdown">
                     <li><a href="#tuto_1">Usando Smarthphone</a></li>
                     <li><a href="#tuto_2">Accediendo a Internet</a></li>
@@ -39,16 +43,17 @@
                 </ul>
             </li>
             <li class="navbar__item">
-                <a href="#">Comunidad</a>
+                <div class="menu-ref">
+                    <a href="#">Comunidad</a>
+                </div>
                 <ul class="dropdown">
-                    <li><a href="#">Chat en Vivo</a></li>
-                    <li><a href="#">Preguntaste Frecuentes</a></li>
-                    <li><a href="#">Guias Paso a Paso</a></li>
-                    <li><a href="#">Ayuda el Usuario</a></li>
+                    <li><a href="#comunidad">Comentarios</a></li>
                 </ul>
             </li>
             <li class="navbar__item">
-                <a href="#">Gestion de Perfiles</a>
+                <div class="menu-ref">
+                    <a href="#">Gestion de Perfiles</a>
+                </div>
                 <ul class="dropdown">
                     <li><a href="#">Iniciar Sesion</a></li>
                     <li><a href="#">Registro</a></li>
@@ -57,7 +62,9 @@
                 </ul>
             </li>
             <li class="navbar__item">
-                <a href="#">Configuracion y Accesibilidad</a>
+                <div class="menu-ref">
+                    <a href="#">Configuracion y Accesibilidad</a>
+                </div>
                 <ul class="dropdown">
                     <li><a href="#">Tamaño de Texto</a></li>
                     <li><a href="#">Contraste</a></li>
@@ -138,40 +145,107 @@
         </div>
     </div>
 
-    <section class="tutoriales">
-        <h1 class="tutoriales__title">Tutoriales</h1>
-        <div class="tutoriales__grid">
-            <div id="tuto_1" class="tutoriales__item">
-                <img src="imgs/landing-page/tutoriales1.png" alt="Usando Smarthphone" class="tutoriales__image">
-                <div class="tutoriales__text">
-                    <h2>Usando Smarthphone</h2>
-                    <p>Aprenda a utilizar tu smartphone con facilidad y aproveche todas sus funciones.</p>
-                </div>
+    <section class="tutoriales-feed-section">
+        <h2 class="tutoriales__title">Tutoriales</h2>
+        <div class="tutoriales__container">
+            <div class="tutoriales-feed">
+                <a id="tuto_1" class="tutoriales-card" href="">
+                    <img class="tutoriales-image" src="imgs/landing-page/tutoriales1.png" alt="Case study 1">
+                    <div class="tutoriales-content">
+                        <h2 class="tutoriales-title">Usando Smarthphone</h2>
+                        <p class="tutoriales-text">Aprenda a utilizar tu smartphone con facilidad y aproveche todas sus funciones.</p>
+                    </div>
+                </a>
+                <a id="tuto_2" class="tutoriales-card" href="">
+                    <img class="tutoriales-image" src="imgs/landing-page/tutoriales2.png" alt="Case study 2">
+                    <div class="tutoriales-content">
+                        <h2 class="tutoriales-title">Accediendo a Internet</h2>
+                        <p class="tutoriales-text">Descubra cómo navegar en Internet de manera segura y efectiva.</p>
+                    </div>
+                </a>
+                <a id="tuto_3" class="tutoriales-card" href="">
+                    <img class="tutoriales-image" src="imgs/landing-page/tutoriales3.png" alt="Case study 3">
+                    <div class="tutoriales-content">
+                        <h2 class="tutoriales-title">Comunicación</h2>
+                        <p class="tutoriales-text">Explore diferentes herramientas para comunicarte con amigos y familiares.</p>
+                    </div>
+                </a>
+                <a id="tuto_4" class="tutoriales-card" href="">
+                    <img class="tutoriales-image" src="imgs/landing-page/tutoriales4.png" alt="Case study 3">
+                    <div class="tutoriales-content">
+                        <h2 class="tutoriales-title">Redes Sociales</h2>
+                        <p class="tutoriales-text">Aprenda a usar las redes sociales de forma facil.</p>
+                    </div>
+                </a>
             </div>
-            <div id="tuto_2" class="tutoriales__item">
-                <img src="imgs/landing-page/tutoriales2.png" alt="Accediendo a Internet" class="tutoriales__image">
-                <div class="tutoriales__text">
-                    <h2>Accediendo a Internet</h2>
-                    <p>Descubra cómo navegar en Internet de manera segura y efectiva.</p>
+        </div>
+    </section>     
+    
+    <section id="comunidad">
+        <h1 class="comunidad__title">Comunidad</h1>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <div class="container-carrousel">
+                        <img class="image" src="imgs/landing-page/image-comment1.jpg" alt="Descripción de la imagen" height="40">
+                        <div class="columns">
+                            <p>Pablo Gerónimo Raymundo Aguirre</p>
+                            <div class="globo">
+                                <img class="uno" src="imgs/landing-page/planeta.png" alt="Descripción de la imagen" height="30">
+                                <p>15/04/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="comentarios">Los trabajos me estan matando ...¿Necesito ayuda?...AYUDENME</p>
                 </div>
-            </div>
-            <div id="tuto_3" class="tutoriales__item">
-                <img src="imgs/landing-page/tutoriales3.png" alt="Comunicación" class="tutoriales__image">
-                <div class="tutoriales__text">
-                    <h2>Comunicación</h2>
-                    <p>Explore diferentes herramientas para comunicarte con amigos y familiares.</p>
+                <div class="carousel-item">
+                    <div class="container-carrousel">
+                        <img class="image" src="imgs/landing-page/image-comment2.jpg" alt="Descripción de la imagen" height="40">
+                        <div class="columns">
+                            <p>Henry Edson Puertas</p>
+                            <div class="globo">
+                                <img class="uno" src="imgs/landing-page/planeta.png" alt="Descripción de la imagen" height="30">
+                                <p>15/06/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="comentarios">Gracias al grupo de voluntarios y profesionales por brindarnos una atención digna y necesaria para nosotros.</p>
                 </div>
-            </div>
-            <div id="tuto_4" class="tutoriales__item">
-                <img src="imgs/landing-page/tutoriales4.png" alt="Redes Sociales" class="tutoriales__image">
-                <div class="tutoriales__text">
-                    <h2>Redes Sociales</h2>
-                    <p>Aprenda a usar las redes sociales de forma facil.</p>
+                <div class="carousel-item">
+                    <div class="container-carrousel">
+                        <img class="image" src="imgs/landing-page/image-comment3.jpg" alt="Descripción de la imagen" height="40">
+                        <div class="columns">
+                            <p>Pedrolero Risotillo</p>
+                            <div class="globo">
+                                <img class="uno" src="imgs/landing-page/planeta.png" alt="Descripción de la imagen" height="30">
+                                <p>15/06/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="comentarios">Es realmente reconfortante saber que hay personas dedicadas a ayudarnos :)</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-carrousel">
+                        <img class="image" src="imgs/landing-page/image-comment4.jpg" alt="Descripción de la imagen" height="40">
+                        <div class="columns">
+                            <p>Don Capibariño</p>
+                            <div class="globo">
+                                <img class="uno" src="imgs/landing-page/planeta.png" alt="Descripción de la imagen" height="30">
+                                <p>15/06/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="comentarios">Como se esperaba de TechSenior, ayudandonos con un apoyo excepcional en el uso de la tecnología.</p>
                 </div>
             </div>
         </div>
-    </section>       
+        <div class="carousel-buttons">
+            <button class="carousel-button prev">←</button>
+            <button class="carousel-button next">→</button>
+        </div>
     
+    </section>  
+
     <footer class="footer-container">
     <div class="footer-links">
         <div class="footer-links-column">
