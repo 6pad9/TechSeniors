@@ -164,3 +164,10 @@ nextButton.addEventListener('click', () => {
 
 cloneItems();
 updateCarousel();
+
+
+//Validacion del Login
+document.getElementById("redirectBtn").addEventListener("click", function() {
+    window.location.href = "login.html";
+});
+
