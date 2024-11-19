@@ -50,19 +50,18 @@ closeButton.addEventListener('click', toggleMenu);
 
 window.addEventListener("resize", function () {
     if (window.innerWidth > 839) {
+        openButton.classList.remove('open-menu');
         openButton.style.display = "none";
         closeButton.style.display = "none";
-        navbarLinks.classList.remove('openMenu');
-        openButton.classList.remove('open-menu');
         val = true; 
 
         navbarLinks.classList.remove('openMenu');
         navbarLinks.classList.remove('transition'); 
         firstTime = true; 
     } else {
-        openButton.style.display = "block";
         if (val) {
             openButton.classList.add('open-menu');
+            openButton.style.display = "block";
             closeButton.style.display = "none";
             val = false;
 
